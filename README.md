@@ -5,4 +5,4 @@ This is an archive of a raytracer rendering program for CS373, Spring 2025 (Intr
 Visit my gallery site [here.](http://www.cs.gettysburg.edu/~stacni01/cs373/)
 
 
-**Please note:** the accompanying '.jar' application was written by Professor [Ivalyo Ilinkin](https://www.gettysburg.edu/academic-programs/computer-science/faculty/employee_detail.dot?empId=04006600720013294&pageTitle=Ivaylo+Ilinkin) of Gettysburg College, I only kept it here as it is a useful tool to view *.PPM* files on Windows and it can create an *APNG* file from multiple rendered *.PPM* files, making an 'animated' scene.
+**Please note:** the accompanying '.jar' application was written by Professor [Ivalyo Ilinkin](https://www.gettysburg.edu/academic-programs/computer-science/faculty/employee_detail.dot?empId=04006600720013294&pageTitle=Ivaylo+Ilinkin) of Gettysburg College, I only kept it here as it is a useful tool to view *.PPM* files on Windows and it can create an *APNG* file from multiple rendered *.PPM* files, making an 'animated' scene. The same applies for all models and maps, these were provided by Professor Ilinkin as handouts.
