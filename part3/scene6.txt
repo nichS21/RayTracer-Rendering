@@ -1,0 +1,49 @@
+camera
+    pos <0, 0, 100>                
+    view_size  60                
+    samples    900                
+    depth 1
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+light_source
+    pos <-50, 50, 100>
+    rgb <1.0, 1.0, 1.0>
+end
+
+cylinder
+    center <-15, 0, 0>
+    radius 10 20
+
+    solid rgb <0,1,0>
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.1  phong_size 10
+    end
+
+    bump_map maps/sh1-bump.ppm
+
+end  
+
+
+cylinder
+    center <15, 0, 0>
+    radius 10 20
+
+    texture maps/earth.ppm
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.6  phong_size 40
+    end
+
+    bump_map maps/earth.ppm
+
+end    
+

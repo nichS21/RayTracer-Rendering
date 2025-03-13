@@ -1,0 +1,62 @@
+camera
+    pos <0, 0, 100>                
+    view_size  100                 
+    samples    900   
+    depth 5      
+end
+
+light_ambient
+    rgb <0.3, 0.3, 0.3>
+end	
+
+light_source
+    pos <20, 20, 40>
+    rgb <1, 1, 1>
+end
+
+light_source
+    pos <0, 40, 0>
+    rgb <1, 1, 1>
+end
+
+cylinder
+    center <0, 0, -40>
+    size 10 20
+
+    solid   rgb <0.5, 0.5, 1>
+
+    material
+        ambient  0.2
+        diffuse  0.3
+        specular 0.4  phong_size 40 
+    end
+
+end
+
+cylinder
+    center <-25, 30, 0>
+    size 10 20
+
+    solid   rgb <1, 1, 0.5>
+
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 1.0  phong_size 100
+    end
+
+end
+
+cylinder
+    center <25, 15, -30>
+    size 10 20
+
+    solid   rgb <1, 0, 0>
+
+    material
+        ambient  0.5
+        diffuse  0.6
+        specular 0.2  phong_size 90 
+    end
+
+end

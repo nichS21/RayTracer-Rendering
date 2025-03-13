@@ -1,0 +1,32 @@
+camera
+    pos <0, 0, 100>              
+    view_size  50                 
+    samples    900                
+end
+
+light_ambient
+    rgb <0.1, 0.2, 0.3>
+end
+
+light_source
+    pos <50, 100, 0>
+    rgb <0.8, 0.8, 0.5>
+end
+
+light_source
+    pos <100, 50, -50>
+    rgb <1, 1, 1>
+end
+
+sphere
+    center <0, 0, -50>
+    radius 10
+
+    solid   rgb <1, 0.27, 0>
+
+    material
+        ambient  0.4
+        diffuse  0.3
+        specular 0.8  phong_size 100 
+    end
+end

@@ -1,0 +1,46 @@
+camera
+    pos <0, 0, 100>                
+    view_size  60                
+    samples    900                
+    depth 1
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+light_source
+    pos <0, 50, 100>
+    rgb <1.0, 1.0, 1.0>
+end
+
+cone
+    peak <-10, 10, 0>
+    size 10 15 10
+
+    texture maps/sh1.ppm
+
+    material
+        ambient  0.2
+        diffuse  0.6
+        specular 0.1  phong_size 10
+    end
+
+    mask maps/sh1-mask.ppm
+
+end
+
+
+cone
+    peak <10, 10, 0>
+    size 20 15 5
+
+    texture maps/earth.ppm
+
+    material
+        ambient  0.2
+        diffuse  0.6
+        specular 0.4  phong_size 40
+    end
+end
+

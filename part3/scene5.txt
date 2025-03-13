@@ -1,0 +1,48 @@
+camera
+    pos <0, 0, 100>                
+    view_size  70                
+    samples    1000                
+    depth 2
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+light_source
+    pos <-50, -7, 100>
+    rgb <1.0, 1.0, 1.0>
+end
+
+
+sphere
+    center <-10, -5, 0>
+    radius 10 
+
+    texture maps/earth.ppm
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.5  phong_size 8
+    end
+
+    bump_map maps/earth.ppm
+
+end 
+
+sphere
+    center <10, 10, -40>
+    radius 6 
+
+    texture maps/moon.ppm
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.3  phong_size 4
+    end
+
+    bump_map maps/moon.ppm
+
+end 

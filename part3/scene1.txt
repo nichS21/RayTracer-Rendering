@@ -1,0 +1,45 @@
+camera
+    pos <0, 0, 100>                
+    view_size  60                
+    samples    900                
+    depth 3
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+light_source
+    pos <0, 50, 100>
+    rgb <1.0, 1.0, 1.0>
+end
+
+sphere
+    center <25, 0, -50>
+    radius 15
+
+    texture maps/checker-ry.ppm
+
+    material
+        ambient  0.2
+        diffuse  0.6
+        specular 0.1  phong_size 10
+    end
+end
+
+sphere
+    center <-25, 0, -50>
+    radius 15
+
+    texture maps/sh1.ppm
+
+    material
+        ambient  0.2
+        diffuse  0.6
+        specular 0.8  phong_size 80
+    end
+	
+    mask maps/sh1-mask.ppm
+
+end
+

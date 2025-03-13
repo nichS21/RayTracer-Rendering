@@ -1,0 +1,48 @@
+camera
+    pos <0, 0, 100>                
+    view_size  100                
+    samples    900                
+    depth 1
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+light_source
+    pos <25, 0, 100>
+    rgb <1.0, 1.0, 1.0>
+end
+
+sphere
+    center <0, 0, -100>
+    radius 75
+
+    solid   rgb <1, 1, 1>
+
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 0.1 phong_size 10 
+    end
+end
+
+mesh
+    source models/dolphin.pov flat spherical
+    scale 40
+    translate <5, 0, 25>
+
+
+    material
+        ambient  0.5
+        diffuse  0.5
+        specular 0.9  phong_size 70
+    end
+	
+    texture maps/checker-levels/checker-ry-64x64.ppm
+    mask maps/sh2-mask.ppm
+    bump_map maps/checker-levels/checker-ry-64x64.ppm
+
+end
+
+

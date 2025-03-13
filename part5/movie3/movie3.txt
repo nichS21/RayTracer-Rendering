@@ -1,0 +1,109 @@
+movie
+    frames 60
+    radius 45
+    height 90
+end
+
+camera
+    pos <0, 0, 100>                
+    view_size  100
+    samples    900                
+    depth 1
+    look_at <0, 0, 0>
+    sky <0, 1, 0>
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+light_source
+    pos <0, 90, 0>
+    rgb <1.0, 1.0, 1.0>
+end
+
+light_source
+    pos <0, 0, 100>
+    rgb <1.0, 1.0, 1.0>
+end
+
+cone
+    peak <0, 20, 0>
+    size 20 40 20
+    
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 0.8 phong_size 80 
+    end
+
+    texture maps/earth.ppm
+    bump_map maps/earth-bump.ppm
+end
+
+plane
+    <0, 1, 0> 100
+
+    //solid rgb <0, 0, 0.5>
+
+    material
+        ambient  0.5
+        diffuse  0.5
+        specular 0.7  phong_size 70
+    end
+ 
+    texture maps/checker-ry.ppm
+    bump_map maps/checker-ry.ppm
+
+end
+
+plane
+    <0, -1, 0> 100
+
+    solid rgb <0.5, 0.5, 0.5>
+
+    material
+        ambient  0.5
+        diffuse  0.5
+        specular 0.7  phong_size 70
+    end
+end
+
+plane
+    <1, 0, 0> 100
+
+    solid rgb <0.5, 0.5, 0.5>
+
+    material
+        ambient  0.5
+        diffuse  0.5
+        specular 0.7  phong_size 70
+    end
+end
+
+plane
+    <-1, 0, 0> 100
+
+    solid rgb <0.5, 0.5, 0.5>
+
+    material
+        ambient  0.5
+        diffuse  0.5
+        specular 0.7  phong_size 70
+    end
+end
+
+plane
+    <0, 0, 1> 500
+
+    solid rgb <0.5, 0.5, 0.5>
+
+    material
+        ambient  0.5
+        diffuse  0.5
+        specular 0.7  phong_size 70
+    end
+end
+
+
+

@@ -1,0 +1,46 @@
+camera
+    pos <0, 0, 100>                
+    view_size  100                 
+    samples    900   
+    depth 5
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end	
+
+light_source
+    pos <80, 20, 20>
+    rgb <1, 1, 1>
+end
+
+cone
+    peak <20, 20, -20>
+    size 10 40 10
+
+    solid   rgb <1, 0, 0>
+
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 0.9  phong_size 90
+    end
+
+end
+
+
+cone
+    peak <-20, 20, -40>
+    size 20 40 20
+
+    solid   rgb <0, 0, 1>
+
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 0.6  phong_size 40
+    end
+
+end
+
+

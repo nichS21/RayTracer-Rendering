@@ -1,0 +1,100 @@
+camera
+    pos <0, 0, 200>                
+    view_size  200                 
+    samples    900   
+    depth 3
+end
+
+light_ambient
+    rgb <0.4, 0.4, 0.4>
+end	
+
+light_source
+    pos <-80, 40, 50>
+    rgb <1, 1, 1>
+end
+
+
+cone
+    peak <-60, 40, -50>
+    size 20 80 20
+
+    solid   rgb <1, 0, 1>
+
+    material
+        ambient  0.3
+        diffuse  0.4
+        specular 0.5  phong_size 30
+    end
+
+end
+
+cone
+    peak <60, 40, 0>
+    size 20 80 20
+
+    solid   rgb <1, 1, 1>
+
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 1.0  phong_size 100
+    end
+end
+
+cylinder
+    center <0, 0, 0>
+    size 20 40
+
+    solid  rgb <1, 0.27, 0>
+
+    material
+        ambient  0.5
+        diffuse  0.5
+        specular 0.9 phong_size 90
+    end
+end
+
+hyperboloid
+    center <0, 70, -80>
+    size 20 20 20 20
+
+    solid   rgb <0.5, 0, 1>
+
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 0.8  phong_size 50 
+    end
+end
+
+sphere
+    center <60, 55, 0>
+    radius 10
+
+    solid   rgb <0.5, 1, 0.3>
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 1.0  phong_size 100 
+    end
+end
+
+sphere
+    center <-60, 55, -50>
+    radius 10
+
+    solid   rgb <1, 0.3, 0>
+
+    material
+        ambient  0.4
+        diffuse  0.5
+        specular 0.1 phong_size 10 
+    end
+end
+
+
+
+
+

@@ -1,0 +1,73 @@
+camera
+    pos <0, 0, 100>                
+    view_size  60                 
+    samples    900   
+    depth 5
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+
+light_source
+    pos <0, 50, 50>
+    rgb <1, 1, 1>
+end
+
+sphere
+    center <15, 0, -50>
+    radius 10
+
+    solid   rgb <1, 0, 1>
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.9  phong_size 90 
+    end
+
+end
+
+sphere
+    center <0, 20,-60>
+    radius 10
+
+    solid   rgb <0, 1, 0>
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.9  phong_size 90 
+    end
+
+end
+
+sphere
+    center <-15, 0,-50>
+    radius 10
+
+    solid   rgb <0.3, 0, 1>
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 1.0  phong_size 90 
+    end
+
+end
+
+sphere
+    center <20, 20,-15>
+    radius 10
+
+    solid   rgb <1, 0, 0>
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.9  phong_size 90 
+    end
+
+end
+

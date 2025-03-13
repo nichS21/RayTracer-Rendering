@@ -1,0 +1,52 @@
+camera
+    pos <0, 0, 100>                
+    view_size  60                
+    samples    1000                
+    depth 3
+end
+
+light_ambient
+    rgb <0.5, 0.5, 0.5>
+end
+
+light_source
+    pos <-50, 0, 100>
+    rgb <1.0, 1.0, 1.0>
+end
+
+
+hyperboloid
+    center <-15, 0, 0>
+    radius 10 10 10 10
+
+    texture maps/moon.ppm
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.6  phong_size 60
+    end
+
+    bump_map maps/moon.ppm
+
+end 
+
+hyperboloid
+    center <15, 0, 0>
+    radius 10 10 10 10
+
+    solid rgb <0.25, 1, 0>
+
+    material
+        ambient  0.3
+        diffuse  0.5
+        specular 0.3  phong_size 30
+    end
+
+    bump_map maps/dots.ppm
+
+end 
+
+
+
+
