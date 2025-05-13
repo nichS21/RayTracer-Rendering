@@ -1,7 +1,10 @@
 camera
     pos <0, 0, 100>              
     view_size  50                 
-    samples    900                
+    samples    900
+    depth 1
+    look_at <0, 0, 0>
+    sky <0, 1, 0>
 end
 
 light_ambient
