@@ -1,6 +1,6 @@
 # RayTracer
 
-This is an archive of a raytracer rendering program for CS373, Spring 2025 (Intro to Computer Graphics). All files used to render scenes on the accompanying site are included in this repo under the '*part__*' directories. The program is capable of rendering individual scenes, as well as multiple scenes in succession for planar, spherical, and cylindrical animation.
+This is an archive of a raytracer rendering program for Intro to Computer Graphics at my undergraduate university. All files used to render scenes on the accompanying site are included in this repo under the '*part__*' directories. The program is capable of rendering individual scenes, as well as multiple scenes in succession for planar, spherical, and cylindrical animation.
 
 Visit my gallery site [here.](http://www.cs.gettysburg.edu/~stacni01/cs373/)
 
