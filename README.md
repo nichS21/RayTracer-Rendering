@@ -9,10 +9,14 @@ Visit my gallery site [here.](http://www.cs.gettysburg.edu/~stacni01/cs373/) Hom
 
 
 ## Setup (easiest way)
-Using Visual Studio 2022, make sure 'vcpkg,'  a C++ dependency manager, is installed with your Visual Studio. Then:
+The project includes everything needed to build and run if using Visual Studio. If it doesn't work straight from the repo, try 
+the below steps.
+
+Using Visual Studio 2022, make sure 'Vcpkg,'  a C++ dependency manager, is installed with your Visual Studio. Then:
 
 1)  Open a terminal within Visual Studio
 2)  type '*vcpkg new --application*'
 3)  then '*vcpkg add port freeglut*'
+4)  make sure enable '*Use Vcpkg Manifest*' under the project properties menu (under vcpkg submenu) 
 
 You should now be able to build and run the application.
